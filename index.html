@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- hoja de estilos -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- título de página -->
+    <title>Davidgr04</title>
+    <!-- ícono de pàgina -->
+    <link rel="shortcut icon" href="./img/download.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="row">
+        <div class="column-1 center">
+            <h1 class="rojo" style="color: red;">M09UF2 practica final</h1>
+        </div>
+    </div>
+    <div>
+        <video width="1500" height="240" id="video1">
+            <source src="./video/m9-video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="flex">
+        <button onclick="playPause()">&#9658</button>
+        <button onclick="EmpezarDeZero()">&#9726</button>
+    </div>
+    <script>
+        var miVideo = document.getElementById("video1");
+        function playPause(){
+            if(miVideo.paused)
+                miVideo.play();
+            else
+                miVideo.pause();
+        }
+            function  EmpezarDeZero(){
+                miVideo.pause();
+                miVideo.currentTime = 0;
+            }
+    </script>
+    <div style="padding-left: 200px;">
+        <form action="">
+            <div class="column-2">
+                <div class="inputbox">
+                    <input type="text"  id="inputField" required>
+                    <label for="">DNI</label>
+                </div>
+            <div class="inputbox">
+                <input type="text"id="inputField" required>
+                <label for="">Direccion</label>
+            </div>
+    
+            <div class="inputbox">
+                <input type="text" id="inputField" required>
+                <label for="">Correo</label>
+                </div>
+            </div>
+            <div class="column-21">
+                <select class="optionss">
+                    <option disabled selected value="">Lo que mas me a gustado de la pagina:</option>
+                    <option>Los audios</option>
+                    <option>Las imagenes</option>
+                    <option>El video</option>
+                </select>
+    
+                <div class="inputbox">
+                    <input type="number" id="inputField" required>
+                    <label for="">Edad</label>
+                </div>
+                <div class="inputbox">
+                    <input type="number" id="inputField" required>
+                    <label for="">NºTelefono</label>
+                </div>
+            </div>
+            <input type="submit" class="boton">
+        
+        </form>
+    </div>
+    <br>
+    <div>
+        <svg width="200" height="400" viewBox="0 0 200 400">
+            
+            <!-- Cuerpo -->
+            <rect x="90" y="100" width="50" height="200" fill="grey" />
+            
+            <!-- Brazos -->
+            <rect x="30" y="150" width="60" height="10" fill="grey" />
+            <rect x="20" y="150" width="10" height="10" fill="#f8c291" />
+            <rect x="140" y="150" width="80" height="10" fill="#f8c291" />
+            <rect x="100" y="150" width="90" height="10" fill="grey" />
+            
+            <!-- Cabeza -->
+            <circle cx="117" cy="100" r="50" fill="red" />
+            <!-- Ojo -->
+            <ellipse cx="117" cy="95" rx="30" ry="30" stroke="black" fill="white"/>
+            <ellipse cx="117" cy="105" rx="25" ry="25" stroke="black" fill="black"/>
+            <!-- Piernas -->
+            <rect x="90" y="380" width="20" height="100" fill="green" />
+            <rect x="90" y="300" width="20" height="80" fill="grey" />
+            <rect x="120" y="380" width="20" height="100" fill="green" />
+            <rect x="120" y="300" width="20" height="80" fill="grey" />
+          </svg>
+        <div>
+            <audio controls id="Metralletas">
+                <source src="./sonidos/FRAN EL METRALLETAS!! 🤣🤣 - MEJORES MOMENTOS CITAS LLOBETI4 (1).mp3">
+            </audio >
+            <div>
+                <button onclick = " document.getElementById('Metralletas').play() " > Play </button>
+                <button onclick = " document.getElementById('Metralletas').pause() " > Pausa </button>
+                <button onclick = " document.getElementById('Metralletas').volume+=0.1 " > Volum + </button>
+                <button onclick = " document.getElementById('Metralletas').volume-=0.1 " > Volum - </button>
+            </div>
+        </div>
+    
+        <div class="row">
+        <div class="column-1 center">
+            <h1 class="rojo" style="color: red;">M09UF2 de <a href="https://github.com/Davidgr04" target="_blank" class="rojo">@Davidgr04</a></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-2 padding-m">
+            <a href="../PracticaCSS.html" target="_blank"><img src="./img/img.PNG" alt="Batman"></a>
+        </div>
+        <div class="column-2 padding-m">
+            <a href="../Practica_Sonidos/index.html" target="_blank"><img src="./img/sonidos.PNG" alt="Weed"></a>
+        </div>
+    </div>
+</body>
+
+</html>
